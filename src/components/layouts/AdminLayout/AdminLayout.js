@@ -4,7 +4,6 @@ import MainHeader from '../../MainHeader/MainHeader';
 import Row from '../../grid-system/Col/Col';
 import Col from '../../grid-system/Row/Row';
 import './admin-layout.scss';
-import Portal from '../../Portal/Portal';
 
 const AdminLayout = props => {
     return (
@@ -24,7 +23,6 @@ const AdminLayout = props => {
                     </section>
                 </Col>
             </Row>
-            <Portal.Out id="modal-container" />
         </Fragment>
     );
 };

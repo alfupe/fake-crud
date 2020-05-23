@@ -1,9 +1,10 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Portal from '../Portal/Portal';
 
 const Modal = props => {
-    return (
-        <Portal.In target="modal-container">
+    const renderPortal = props => {
+        return (
             <section className="modal">
                 <header className="modal__header">
                     {props.title}
@@ -16,7 +17,11 @@ const Modal = props => {
                     <Portal.Out id="modal-actions" />
                 </footer>
             </section>
-        </Portal.In>
+        );
+    };
+
+    return (
+        ReactDOM.createPortal(renderPortal(props), document.body)
     );
 };
 

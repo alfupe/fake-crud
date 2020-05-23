@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Alex",
+      "lastName": "Fuentes",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/BryanHorsey/128.jpg"
+    }
+  ]
+}
