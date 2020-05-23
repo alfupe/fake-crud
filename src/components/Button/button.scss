@@ -3,12 +3,16 @@
 
 .button {
     appearance: none;
-    border-color: transparent;
+    border: 1px solid transparent;
     padding: 5px 20px;
     transition: all 0.15s ease;
 
     &:focus {
         @include prettyFocus();
+    }
+
+    &:active {
+        box-shadow: none;
     }
 
     &--default {

@@ -20,7 +20,7 @@ const UsersListPage = props => {
                    onClose={visibility => setModalVisibility(visibility)}>
                 modal
                 <Portal.In target="modal-actions">
-                    <Button text="Cerrar"
+                    <Button text="Cancelar"
                             onClick={toggleModal} />
                     <Button skin="primary"
                             text="Aceptar"

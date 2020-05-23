@@ -1,9 +1,7 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import App from './App';
+import { shallow } from 'enzyme';
 
 test('It renders without crashing', () => {
-    const {getByText} = render(<App/>);
-    const linkElement = getByText(/holi/i);
-    expect(linkElement).toBeInTheDocument();
+    shallow(<App />);
 });

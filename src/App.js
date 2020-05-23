@@ -8,7 +8,6 @@ const App = () => {
     return (
         <ServicesProvider>
             <PortalProvider>
-                holi
                 <Router>
                     <AppRoutes />
                 </Router>
