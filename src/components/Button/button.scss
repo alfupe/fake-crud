@@ -1,0 +1,34 @@
+@import "src/assets/scss/variables";
+@import "src/assets/scss/mixins";
+
+.button {
+    appearance: none;
+    border-color: transparent;
+    padding: 5px 20px;
+    transition: all 0.15s ease;
+
+    &:focus {
+        @include prettyFocus();
+    }
+
+    &--default {
+        border-color: $gray-200;
+
+        &:hover {
+            background-color: darken($gray-100, 5);
+        }
+    }
+
+    &--primary {
+        background-color: $color-primary;
+        color: $gray-100;
+
+        &:hover {
+            background-color: darken($color-primary, 10);
+        }
+    }
+
+    & + & {
+        margin-left: $spacer / 4;
+    }
+}
