@@ -1,4 +1,4 @@
-import faker from 'faker';
+const faker = require('faker');
 
 const generateRandomUser = (locale = 'es') => {
     faker.locale = locale;
@@ -17,4 +17,4 @@ const generateRandomUser = (locale = 'es') => {
     };
 };
 
-export default generateRandomUser;
+module.exports = generateRandomUser;
