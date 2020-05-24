@@ -1,6 +1,7 @@
 @import "src/assets/scss/variables";
 
 .user-card {
+    $uc: &;
     border-radius: 4px;
     overflow: hidden;
     box-shadow: 0 2px 6px rgba($gray-500, 0.5);
@@ -8,17 +9,52 @@
 
     &:hover {
         box-shadow: 0 2px 12px rgba($color-info, 0.5);
+
+        #{$uc}__actions {
+            opacity: 1;
+            visibility: visible;
+        }
     }
 
     &__figure {
+        position: relative;
         overflow: hidden;
+    }
+
+    &__actions {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        transition: all 0.15s ease;
+    }
+
+    &__action {
+        transition: all 0.15s ease;
+        background-color: $gray-100;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: 5px;
+
+        &:hover {
+            color: $color-info
+        }
     }
 
     &__avatar {
         width: 100%;
         object-fit: cover;
         transition: all 0.5s ease-out;
-        cursor: pointer;
 
         &:hover {
             transform: scale(1.15);

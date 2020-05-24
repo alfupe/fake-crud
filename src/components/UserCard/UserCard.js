@@ -11,6 +11,16 @@ const UserCard = ({user}) => {
                      loading="lazy"
                      alt={`${user.firstName} ${user.lastName}`}
                 />
+                <figcaption className="user-card__actions">
+                    <div className="user-card__action"
+                         onClick={event => console.log('edit')}>
+                        <Icon icon="pencil-alt" />
+                    </div>
+                    <div className="user-card__action"
+                         onClick={event => console.log('remove')}>
+                        <Icon icon="trash" />
+                    </div>
+                </figcaption>
             </figure>
             <footer className="user-card__footer">
                 <h2 className="user-card__name">{user.firstName} {user.lastName}</h2>
