@@ -1,6 +1,6 @@
 export default class AuthService {
-    login(password) {
-        localStorage.setItem('authorized', JSON.stringify(password === '123'));
+    login(formData) {
+        localStorage.setItem('authorized', JSON.stringify((!!formData.password)));
 
         return Promise.resolve(this.loggedIn());
     }

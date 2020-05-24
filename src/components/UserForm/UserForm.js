@@ -30,7 +30,7 @@ const UserForm = props => {
         }
 
         validateForm(formData);
-    }, [formData])
+    }, [formData]);
 
     const handleSubmit = event => {
         event.preventDefault();

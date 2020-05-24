@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react';
 import Icon from '../Icon/Icon';
-import './user-card.scss';
 import Modal from '../Modal/Modal';
 import { ServicesContext } from '../../context/ServicesProvider';
 import UserForm from '../UserForm/UserForm';
 import placeholderImage from './512x512.png';
+import './user-card.scss';
 
 const UserCard = ({user, onRemove, onEdit}) => {
     const [modalIsOpen, setModalVisibility] = useState(false);

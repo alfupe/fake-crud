@@ -1,17 +1,5 @@
 @import "src/assets/scss/variables";
 
-.layout {
-    height: 100%;
-
-    &__main-navigation {
-        height: 100%;
-    }
-
-    &__page-body {
-        padding: $spacer / 2;
-    }
-
-    &__site-header {
-
-    }
+.outer-layout {
+    min-height: 100vh;
 }

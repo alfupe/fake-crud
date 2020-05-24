@@ -39,6 +39,10 @@ body {
     line-height: 1.5;
 }
 
+#root {
+    min-height: 100vh;
+}
+
 /* Remove list styles on ul, ol elements with a class attribute */
 ul[class],
 ol[class] {
