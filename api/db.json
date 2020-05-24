@@ -549,6 +549,17 @@
       "phone": "938-292-510",
       "website": "ignacio.com",
       "password": "Ko7af8QG"
+    },
+    {
+      "firstName": "Amalia",
+      "lastName": "Archuleta",
+      "email": "Amalia_Archuleta@hotmail.com",
+      "username": "Amalia_Archuleta",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/kerihenare/128.jpg",
+      "phone": "964-798-319",
+      "website": "miguel ángel.com.es",
+      "password": "Ej6dWauu",
+      "id": 52
     }
   ]
 }

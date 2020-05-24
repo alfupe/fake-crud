@@ -9,7 +9,7 @@ const UsersGrid = ({users, onRemove, onEdit}) => {
                 <UserCard key={index}
                           user={user}
                           onRemove={onRemove}
-                          onEdit={onEdit}
+                          onEdit={formData => onEdit(user.id, formData)}
                 />
             ))}
         </div>

@@ -9,6 +9,7 @@ import PageContainer from '../../PageContainer/PageContainer';
 import PageHeader from '../../PageHeader/PageHeader';
 import Icon from '../../Icon/Icon';
 import SearchControl from '../../SearchControl/SearchControl';
+import UserForm from '../../UserForm/UserForm';
 
 const UsersListPage = props => {
     const [modalIsOpen, setModalVisibility] = useState(false);
@@ -19,6 +20,21 @@ const UsersListPage = props => {
         services.user
             .search(query)
             .then(response => setUsers(response))
+            .catch(console.error);
+    };
+
+    const createUser = formData => {
+        services.user.create(formData)
+            .then(response => {
+                findUsers();
+                setModalVisibility(false);
+            })
+            .catch(console.error);
+    };
+
+    const updateUser = (idUser, formData) => {
+        services.user.update(idUser, formData)
+            .then(response => findUsers())
             .catch(console.error);
     };
 
@@ -44,21 +60,14 @@ const UsersListPage = props => {
 
             {users &&
             <UsersGrid users={users}
-                       onEdit={findUsers}
+                       onEdit={updateUser}
                        onRemove={findUsers}
             />}
 
             {modalIsOpen &&
-            <Modal title="title"
+            <Modal title="Crear nuevo usuario"
                    onClose={visibility => setModalVisibility(visibility)}>
-                modal
-                <Portal.In target="modal-actions">
-                    <Button text="Cancelar"
-                            onClick={toggleModal} />
-                    <Button skin="primary"
-                            text="Aceptar"
-                            onClick={event => console.log('Action A')} />
-                </Portal.In>
+                <UserForm onSubmit={createUser} />
             </Modal>}
         </PageContainer>
     );

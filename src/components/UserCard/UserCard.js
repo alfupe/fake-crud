@@ -2,9 +2,8 @@ import React, { useContext, useState } from 'react';
 import Icon from '../Icon/Icon';
 import './user-card.scss';
 import Modal from '../Modal/Modal';
-import Portal from '../Portal/Portal';
-import Button from '../Button/Button';
 import { ServicesContext } from '../../context/ServicesProvider';
+import UserForm from '../UserForm/UserForm';
 
 const UserCard = ({user, onRemove, onEdit}) => {
     const [modalIsOpen, setModalVisibility] = useState(false);
@@ -65,16 +64,14 @@ const UserCard = ({user, onRemove, onEdit}) => {
                 </div>
             </footer>
             {modalIsOpen &&
-            <Modal title="title"
+            <Modal title="Actualizar usuario"
                    onClose={visibility => setModalVisibility(visibility)}>
-                modal
-                <Portal.In target="modal-actions">
-                    <Button text="Cancelar"
-                            onClick={toggleEditModal} />
-                    <Button skin="primary"
-                            text="Aceptar"
-                            onClick={event => console.log('Action A')} />
-                </Portal.In>
+                <UserForm formData={user}
+                          onSubmit={formData => {
+                              onEdit(formData);
+                              toggleEditModal();
+                          }}
+                />
             </Modal>}
         </article>
     );
