@@ -1,8 +1,7 @@
 const faker = require('faker');
 
-const generateRandomProduct = (counter, category = 'technics') => {
+const generateRandomProduct = (counter = 1, category = 'technics') => {
     return {
-        id: counter,
         color: faker.commerce.color(),
         department: faker.commerce.department(),
         productName: faker.commerce.productName(),

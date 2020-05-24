@@ -289,16 +289,6 @@
       "productAdjective": "Unbranded",
       "productMaterial": "Metal",
       "image": "http://lorempixel.com/output/food-q-c-512-512-10.jpg"
-    },
-    {
-      "color": "#053ce1",
-      "department": "Grocery",
-      "productName": "Fantastic Steel Salad",
-      "price": "294.00",
-      "productAdjective": "Sleek",
-      "productMaterial": "Granite",
-      "image": "http://lorempixel.com/output/abstract-q-c-512-512-9.jpg",
-      "id": 31
     }
   ],
   "users": [

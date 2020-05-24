@@ -6,6 +6,7 @@ import Icon from '../Icon/Icon';
 import generateRandomProduct from '../../modules/generate-random-product/generate-random-product';
 import placeholderImage from './512x512.png';
 import AlertMessage from '../AlertMessage/AlertMessage';
+import namedColorConverter from '../../modules/named-color-converter/named-color-converter';
 import './product-form.scss';
 
 const ProductForm = props => {
@@ -62,6 +63,7 @@ const ProductForm = props => {
         const product = generateRandomProduct();
         setFormData({
             ...product,
+            color: namedColorConverter(product.color),
             image: generateImage()
         });
     };
