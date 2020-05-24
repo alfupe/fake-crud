@@ -5,8 +5,8 @@ import Portal from '../Portal/Portal';
 import Icon from '../Icon/Icon';
 import generateRandomUser from '../../modules/generate-random-user/generate-random-user';
 import placeholderAvatar from './placeholder-user.png';
-import './user-form.scss';
 import AlertMessage from '../AlertMessage/AlertMessage';
+import './user-form.scss';
 
 const UserForm = props => {
     const initialValues = {

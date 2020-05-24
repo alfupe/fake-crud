@@ -34,4 +34,22 @@
         right: 8px;
         top: 25px;
     }
+
+    [type="color"] {
+        -webkit-appearance: none;
+        width: 34px;
+        height: 34px;
+        border-radius: 34px;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid $gray-200;
+
+        &::-webkit-color-swatch-wrapper {
+            padding: 0;
+        }
+
+        &::-webkit-color-swatch {
+            border: none;
+        }
+    }
 }

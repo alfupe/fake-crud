@@ -4,10 +4,10 @@ import Button from '../Button/Button';
 import Portal from '../Portal/Portal';
 import Icon from '../Icon/Icon';
 import generateRandomProduct from '../../modules/generate-random-product/generate-random-product';
-import placeholderAvatar from './placeholder-user.png';
+import placeholderImage from './512x512.png';
 import AlertMessage from '../AlertMessage/AlertMessage';
 import './product-form.scss';
-import faker from 'faker';
+
 const ProductForm = props => {
     const initialValues = {
         color: '',
@@ -50,37 +50,43 @@ const ProductForm = props => {
         setIsValid(isValid);
     };
 
-    const autoGenerate = event => {
-        const product = generateRandomProduct();
-        setFormData(product);
+    const generateImage = () => {
+        const counter = Math.floor(Math.random() * 10) + 1;
+        const categoryIndex = Math.floor(Math.random() * 6);
+        const categories = ['abstract', 'animals', 'business', 'cats', 'food', 'fashion', 'technics'];
+
+        return generateRandomProduct(counter, categories[categoryIndex]).image;
     };
 
-    const regenerateAvatar = event => {
-        const avatar = generateRandomProduct().avatar;
+    const autoGenerate = event => {
+        const product = generateRandomProduct();
+        setFormData({
+            ...product,
+            image: generateImage()
+        });
+    };
+
+    const regenerateImage = event => {
+        const image = generateImage();
 
         setFormData({
             ...formData,
-            avatar
+            image
         });
     };
 
     return (
-        <form className="user-form">
-            <div className="user-form__avatar">
+        <form className="product-form">
+            <div className="product-form__image">
                 <label>Imagen</label>
-                <img src={formData.avatar || placeholderAvatar} alt="Producto"/>
-                <div className="user-form__avatar-regenerate"
-                     onClick={regenerateAvatar}>
+                <img src={formData.image || placeholderImage} alt="Producto"/>
+                <div className="product-form__image-regenerate"
+                     onClick={regenerateImage}>
                     <Icon icon="sync-alt" /> Regenerar
                 </div>
             </div>
-            <div className="user-form__fields">
-                <button onClick={event => {
-                    event.preventDefault();
-                    const img = faker.image.technics();
-                    console.log(img);
-                }}>img</button>
-                <div className="user-form__fields-grid">
+            <div className="product-form__fields">
+                <div className="product-form__fields-grid">
                     <FormField value={formData.productName}
                                id="productName"
                                name="productName"
@@ -92,13 +98,6 @@ const ProductForm = props => {
                                name="price"
                                label="Precio"
                                type="number"
-                               onChange={handleChange}
-                    />
-                    <FormField value={formData.color}
-                               id="color"
-                               name="color"
-                               label="Color"
-                               type="color"
                                onChange={handleChange}
                     />
                     <FormField value={formData.department}
@@ -117,6 +116,13 @@ const ProductForm = props => {
                                id="productAdjective"
                                name="productAdjective"
                                label="Info extra"
+                               onChange={handleChange}
+                    />
+                    <FormField value={formData.color}
+                               id="color"
+                               name="color"
+                               label="Color"
+                               type="color"
                                onChange={handleChange}
                     />
                 </div>
