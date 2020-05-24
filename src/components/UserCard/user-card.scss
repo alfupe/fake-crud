@@ -1,0 +1,65 @@
+@import "src/assets/scss/variables";
+
+.user-card {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba($gray-500, 0.5);
+    transition: all 0.5s ease;
+
+    &:hover {
+        box-shadow: 0 2px 12px rgba($color-info, 0.5);
+    }
+
+    &__figure {
+        overflow: hidden;
+    }
+
+    &__avatar {
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.5s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.15);
+            transition: all 0.25s ease-in;
+        }
+    }
+
+    &__name {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $gray-600;
+    }
+
+    &__username {
+        margin: 5px 0 10px;
+    }
+
+    &__contact {
+        font-size: 12px;
+    }
+
+    &__contact-item {
+        color: $gray-500;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        transition: all 0.15s ease;
+
+        &:hover {
+            color: $color-info;
+        }
+
+        svg {
+            margin-right: 5px;
+        }
+    }
+
+    &__footer {
+        padding: $spacer / 2;
+        background-color: $gray-100;
+    }
+}

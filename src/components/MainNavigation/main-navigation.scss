@@ -1,0 +1,84 @@
+@import "src/assets/scss/variables";
+
+.main-navigation {
+    display: flex;
+    align-items: center;
+    padding: $spacer / 2;
+    border-bottom: 1px solid $gray-200;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: $gray-100;
+    z-index: 1;
+
+    &__brand {
+        max-width: 150px;
+        cursor: pointer;
+    }
+
+    &__menu {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        @media (max-width: 767px) {
+            display: none;
+            position: absolute;
+            top: 59px;
+            left: 0;
+            right: 0;
+            background-color: lighten($gray-200, 3);
+            border-bottom: 1px solid $gray-300;
+            z-index: 1;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            &--is-mobile-open {
+                display: block;
+            }
+        }
+    }
+
+    &__menu-item {
+        color: $gray-600;
+        cursor: pointer;
+        padding: 10px;
+        transition: all 0.15s ease;
+
+        &:hover {
+            color: $color-info;
+        }
+
+        a {
+            display: block;
+            color: $gray-600;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-info;
+            }
+        }
+
+        @media (max-width: 767px) {
+            display: block;
+            transition: all 0.15s ease;
+
+            &:hover {
+                background-color: $gray-200;
+                color: $color-info;
+            }
+        }
+    }
+
+    &__burger {
+        position: absolute;
+        right: 15px;
+        font-size: 25px;
+        cursor: pointer;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+}

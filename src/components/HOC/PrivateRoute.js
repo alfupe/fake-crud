@@ -3,12 +3,12 @@ import { ServicesContext } from '../../context/ServicesProvider';
 import { Redirect, Route } from 'wouter';
 
 const PrivateRoute = ({component: Component, ...rest}) => {
-    const servicesContext = useContext(ServicesContext);
+    const services = useContext(ServicesContext);
 
     return (
         <Route {...rest}>
             {props => (
-                servicesContext.services.auth.loggedIn()
+                services.auth.loggedIn()
                     ? <Component {...props} />
                     : <Redirect to="/login" />
             )}
