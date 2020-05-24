@@ -579,7 +579,7 @@
       "username": "alfupe@gmail.com",
       "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hai_ninh_nguyen/128.jpg",
       "phone": "625638441",
-      "website": "",
+      "website": "test.es",
       "password": "admin",
       "id": 54
     },
@@ -593,6 +593,50 @@
       "website": "raúl.org",
       "password": "8ocLtkId",
       "id": 55
+    },
+    {
+      "firstName": "Armando",
+      "lastName": "Navarrete",
+      "email": "Armando.Navarrete@gmail.com",
+      "username": "Armando.Navarrete43",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/tumski/128.jpg",
+      "phone": "901-500-307",
+      "website": "jesús.com.es",
+      "password": "Yfj4c5OH",
+      "id": 56
+    },
+    {
+      "firstName": "Berta",
+      "lastName": "Paz",
+      "email": "Berta_Paz@hotmail.com",
+      "username": "Berta.Paz65",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/cemshid/128.jpg",
+      "phone": "912-311-701",
+      "website": "daniela.org",
+      "password": "TQHCPVSF",
+      "id": 57
+    },
+    {
+      "firstName": "Victoria",
+      "lastName": "Carbajal",
+      "email": "Victoria_Carbajal14@gmail.com",
+      "username": "Victoria19",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/ludwiczakpawel/128.jpg",
+      "phone": "968-978-221",
+      "website": "test.com.es",
+      "password": "6CQxMG0S",
+      "id": 58
+    },
+    {
+      "firstName": "Norma",
+      "lastName": "Henríquez",
+      "email": "Norma.Henrquez14@yahoo.com",
+      "username": "Norma_Henríquez33",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/elisabethkjaer/128.jpg",
+      "phone": "972-230-224",
+      "website": "conchita.com.es",
+      "password": "hsYbvwZd",
+      "id": 59
     }
   ]
 }

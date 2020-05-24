@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Icon from '../Icon/Icon';
 import './form-field.scss';
 
 const FormField = props => {
+    const [type, setType] = useState(props.type);
+
+    const toggleType = event => {
+        const newType = type === 'password'
+            ? ''
+            : 'password';
+        setType(newType);
+    };
+
     return (
         <div className="form-field">
             <label className="form-field__label"
@@ -10,7 +20,13 @@ const FormField = props => {
             </label>
             <input className="form-field__control"
                    {...props}
+                   type={type}
             />
+            {props.type === 'password' &&
+            <div className="form-field__revealer"
+                 onClick={toggleType}>
+                <Icon icon={type === 'password' ? 'eye' : 'eye-slash'} />
+            </div>}
         </div>
     );
 };

@@ -3,6 +3,7 @@
 
 .form-field {
     margin-bottom: $spacer / 2;
+    position: relative;
 
     &__label {
         display: block;
@@ -24,5 +25,13 @@
 
     &__required {
         color: $color-danger;
+    }
+
+    &__revealer {
+        color: $gray-500;
+        cursor: pointer;
+        position: absolute;
+        right: 8px;
+        top: 25px;
     }
 }
