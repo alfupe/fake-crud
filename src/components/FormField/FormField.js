@@ -6,7 +6,7 @@ const FormField = props => {
         <div className="form-field">
             <label className="form-field__label"
                    htmlFor={props.id}>
-                {props.label}
+                {props.label} {props.required && <span className="form-field__required">*</span>}
             </label>
             <input className="form-field__control"
                    {...props}

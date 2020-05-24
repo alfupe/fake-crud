@@ -4,6 +4,7 @@ import './user-card.scss';
 import Modal from '../Modal/Modal';
 import { ServicesContext } from '../../context/ServicesProvider';
 import UserForm from '../UserForm/UserForm';
+import placeholderImage from './512x512.png';
 
 const UserCard = ({user, onRemove, onEdit}) => {
     const [modalIsOpen, setModalVisibility] = useState(false);
@@ -28,7 +29,7 @@ const UserCard = ({user, onRemove, onEdit}) => {
         <article className="user-card">
             <figure className="user-card__figure">
                 <img className="user-card__avatar"
-                     src={user.avatar}
+                     src={user.avatar || placeholderImage}
                      loading="lazy"
                      alt={`${user.firstName} ${user.lastName}`}
                 />

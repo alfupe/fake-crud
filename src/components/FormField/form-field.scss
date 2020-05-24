@@ -21,4 +21,8 @@
             @include prettyFocus();
         }
     }
+
+    &__required {
+        color: $color-danger;
+    }
 }

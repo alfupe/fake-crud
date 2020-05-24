@@ -551,15 +551,48 @@
       "password": "Ko7af8QG"
     },
     {
-      "firstName": "Amalia",
-      "lastName": "Archuleta",
-      "email": "Amalia_Archuleta@hotmail.com",
-      "username": "Amalia_Archuleta",
-      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/kerihenare/128.jpg",
-      "phone": "964-798-319",
-      "website": "miguel ángel.com.es",
-      "password": "Ej6dWauu",
+      "firstName": "Patricia",
+      "lastName": "Becerra",
+      "email": "Patricia84@yahoo.com",
+      "username": "Patricia69",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/jydesign/128.jpg",
+      "phone": "937-957-284",
+      "website": "benito.info",
+      "password": "JDEFhxxl",
       "id": 52
+    },
+    {
+      "firstName": "Ana Luisa",
+      "lastName": "de Anda",
+      "email": "AnaLuisa_deAnda@yahoo.com",
+      "username": "AnaLuisa16",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/ricburton/128.jpg",
+      "phone": "946-357-876",
+      "website": "vicente.com.es",
+      "password": "3QvO3wNx",
+      "id": 53
+    },
+    {
+      "firstName": "Alejandro",
+      "lastName": "Pérez",
+      "email": "alfupe@gmail.com",
+      "username": "alfupe@gmail.com",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hai_ninh_nguyen/128.jpg",
+      "phone": "625638441",
+      "website": "",
+      "password": "admin",
+      "id": 54
+    },
+    {
+      "firstName": "Gilberto",
+      "lastName": "Cordero",
+      "email": "Gilberto_Cordero@gmail.com",
+      "username": "Gilberto.Cordero97",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/samgrover/128.jpg",
+      "phone": "984-772-210",
+      "website": "raúl.org",
+      "password": "8ocLtkId",
+      "id": 55
     }
   ]
 }

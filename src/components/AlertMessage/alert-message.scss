@@ -1,0 +1,19 @@
+@import "src/assets/scss/variables";
+
+.alert-message {
+    display: flex;
+    align-items: center;
+    color: $color-danger;
+    font-size: 14px;
+    padding: 10px;
+    background-color: lighten($color-danger, 45);
+    border-radius: 4px;
+
+    &__icon {
+        margin-right: 5px;
+    }
+
+    &__message {
+        flex: 1;
+    }
+}

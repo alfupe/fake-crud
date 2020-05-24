@@ -11,8 +11,10 @@ const Button = (props) => {
         return classNames.join(' ');
     };
 
+    const {skin, ...buttonProps} = props;
+
     return (
-        <button {...props}
+        <button {...buttonProps}
                 className={getClassName(props)}>
             {props.text}
         </button>
