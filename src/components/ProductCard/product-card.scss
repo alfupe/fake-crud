@@ -1,6 +1,6 @@
 @import "src/assets/scss/variables";
 
-.user-card {
+.product-card {
     $uc: &;
     border-radius: 4px;
     overflow: hidden;
@@ -67,36 +67,43 @@
         }
     }
 
-    &__name {
+    &__department {
         text-transform: uppercase;
         font-size: 12px;
         color: $gray-600;
+        display: flex;
+        align-items: center;
     }
 
-    &__username {
+    &__product-name {
         font-weight: 300;
         margin: 5px 0 10px;
     }
 
-    &__contact {
-        font-size: 12px;
+    &__color {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 5px;
     }
 
-    &__contact-item {
-        color: $gray-500;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        transition: all 0.15s ease;
+    &__price {
+        font-weight: 300;
+        margin: 5px 0 10px;
+        font-size: 30px;
+    }
 
-        &:hover {
-            color: $color-info;
-        }
+    &__meta {
+        font-size: 12px;
 
-        svg {
-            margin-right: 5px;
+        .pill {
+            &:first-child {
+                margin-left: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 

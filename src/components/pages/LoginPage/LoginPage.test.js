@@ -4,7 +4,7 @@ import LoginPage from './LoginPage';
 
 test('It renders the page', () => {
     const {getByText} = render(<LoginPage/>);
-    const title = getByText(/login page/i);
+    const title = getByText(/Log in/i);
 
     expect(title).toBeInTheDocument();
 });

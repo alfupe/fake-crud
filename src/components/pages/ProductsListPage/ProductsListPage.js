@@ -4,42 +4,42 @@ import Modal from '../../Modal/Modal';
 import Portal from '../../Portal/Portal';
 import Button from '../../Button/Button';
 import { ServicesContext } from '../../../context/ServicesProvider';
-import ProductsGrid from '../../UsersGrid/UsersGrid';
+import ProductsGrid from '../../ProductsGrid/ProductsGrid';
 import PageContainer from '../../PageContainer/PageContainer';
 import PageHeader from '../../PageHeader/PageHeader';
 import Icon from '../../Icon/Icon';
 import SearchControl from '../../SearchControl/SearchControl';
-import UserForm from '../../UserForm/UserForm';
+import ProductForm from '../../ProductForm/ProductForm';
 
-const UsersListPage = props => {
+const ProductsListPage = props => {
     const [modalIsOpen, setModalVisibility] = useState(false);
-    const [users, setUsers] = useState();
+    const [products, setProducts] = useState();
     const services = useContext(ServicesContext);
 
-    const findUsers = (query = '') => {
-        services.user
+    const findProducts = (query = '') => {
+        services.product
             .search(query)
-            .then(response => setUsers(response))
+            .then(response => setProducts(response))
             .catch(console.error);
     };
 
-    const createUser = formData => {
-        services.user.create(formData)
+    const createProduct = formData => {
+        services.product.create(formData)
             .then(response => {
-                findUsers();
+                findProducts();
                 setModalVisibility(false);
             })
             .catch(console.error);
     };
 
-    const updateUser = (idUser, formData) => {
-        services.user.update(idUser, formData)
-            .then(response => findUsers())
+    const updateProduct = (idProduct, formData) => {
+        services.product.update(idProduct, formData)
+            .then(response => findProducts())
             .catch(console.error);
     };
 
     useEffect(() => {
-        findUsers();
+        findProducts();
     }, []);
 
     const toggleModal = event => {
@@ -48,29 +48,29 @@ const UsersListPage = props => {
 
     return (
         <PageContainer>
-            <PageHeader title="Listado de usuarios">
+            <PageHeader title="Listado de productos">
                 <Button skin="primary"
-                        text={<Fragment><Icon icon="user-plus" /> Crear Usuario</Fragment>}
+                        text={<Fragment><Icon icon="tag" /> Crear Producto</Fragment>}
                         onClick={toggleModal}
                 />
                 <Portal.In target="page-filters">
-                    <SearchControl onSearch={findUsers} />
+                    <SearchControl onSearch={findProducts} />
                 </Portal.In>
             </PageHeader>
 
-            {users &&
-            <ProductsGrid users={users}
-                          onEdit={updateUser}
-                          onRemove={findUsers}
+            {products &&
+            <ProductsGrid products={products}
+                          onEdit={updateProduct}
+                          onRemove={findProducts}
             />}
 
             {modalIsOpen &&
-            <Modal title="Crear nuevo usuario"
+            <Modal title="Crear nuevo producto"
                    onClose={visibility => setModalVisibility(visibility)}>
-                <UserForm onSubmit={createUser} />
+                <ProductForm onSubmit={createProduct} />
             </Modal>}
         </PageContainer>
     );
 };
 
-export default withAdminLayout(UsersListPage);
+export default withAdminLayout(ProductsListPage);

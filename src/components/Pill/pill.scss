@@ -1,0 +1,13 @@
+@import "src/assets/scss/variables";
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-secondary;
+    color: $gray-100;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-left: 3px;
+    margin-right: 2px;
+}

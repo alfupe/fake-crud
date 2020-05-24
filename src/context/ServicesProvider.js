@@ -1,13 +1,15 @@
 import React from 'react';
 import UserService from '../services/UserService';
 import AuthService from '../services/AuthService';
+import ProductService from '../services/ProductService';
 
 export const ServicesContext = React.createContext({});
 
 const ServicesProvider = props => {
     const services = {
         auth: new AuthService(),
-        user: new UserService()
+        product: new ProductService(),
+        user: new UserService(),
     };
 
     return (

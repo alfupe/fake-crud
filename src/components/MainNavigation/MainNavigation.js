@@ -29,15 +29,25 @@ const MainNavigation = props => {
             </Link>
             <nav className={`main-navigation__menu ${mobileMenuIsVisible ? 'main-navigation__menu--is-mobile-open' : ''}`}>
                 <div className="main-navigation__menu-item">
+                    <Link to="/products">
+                        <Icon icon="tag" /> Productos
+                    </Link>
+                </div>
+                <div className="main-navigation__menu-item">
+                    <Link to="/users">
+                        <Icon icon="user-friends" /> Usuarios
+                    </Link>
+                </div>
+                <div className="main-navigation__menu-item">
                     <a href="https://github.com/alfupe/fake-crud"
                        target="_blank"
                        rel="noopener noreferrer">
-                        <Icon icon={['fab', 'github']} /> GitHub
+                        <Icon icon={['fab', 'github']} />
                     </a>
                 </div>
                 <div className="main-navigation__menu-item"
                      onClick={logOut}>
-                    <Icon icon="sign-out-alt" /> Log out
+                    <Icon icon="sign-out-alt" />
                 </div>
             </nav>
             <div className="main-navigation__burger"

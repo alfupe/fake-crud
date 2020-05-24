@@ -1,4 +1,465 @@
 {
+  "products": [
+    {
+      "id": 1,
+      "color": "mint green",
+      "department": "Music",
+      "productName": "Tasty Metal Tuna",
+      "price": "222.00",
+      "productAdjective": "Gorgeous",
+      "productMaterial": "Wooden"
+    },
+    {
+      "id": 2,
+      "color": "yellow",
+      "department": "Grocery",
+      "productName": "Incredible Plastic Gloves",
+      "price": "710.00",
+      "productAdjective": "Practical",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 3,
+      "color": "orchid",
+      "department": "Automotive",
+      "productName": "Generic Cotton Computer",
+      "price": "954.00",
+      "productAdjective": "Incredible",
+      "productMaterial": "Wooden"
+    },
+    {
+      "id": 4,
+      "color": "ivory",
+      "department": "Baby",
+      "productName": "Small Plastic Bike",
+      "price": "981.00",
+      "productAdjective": "Incredible",
+      "productMaterial": "Frozen"
+    },
+    {
+      "id": 5,
+      "color": "blue",
+      "department": "Grocery",
+      "productName": "Practical Plastic Chair",
+      "price": "985.00",
+      "productAdjective": "Sleek",
+      "productMaterial": "Metal"
+    },
+    {
+      "id": 6,
+      "color": "plum",
+      "department": "Kids",
+      "productName": "Ergonomic Metal Hat",
+      "price": "967.00",
+      "productAdjective": "Practical",
+      "productMaterial": "Soft"
+    },
+    {
+      "id": 7,
+      "color": "turquoise",
+      "department": "Books",
+      "productName": "Licensed Fresh Keyboard",
+      "price": "817.00",
+      "productAdjective": "Intelligent",
+      "productMaterial": "Wooden"
+    },
+    {
+      "id": 8,
+      "color": "red",
+      "department": "Electronics",
+      "productName": "Unbranded Cotton Bacon",
+      "price": "562.00",
+      "productAdjective": "Handmade",
+      "productMaterial": "Soft"
+    },
+    {
+      "id": 9,
+      "color": "white",
+      "department": "Shoes",
+      "productName": "Intelligent Frozen Table",
+      "price": "774.00",
+      "productAdjective": "Small",
+      "productMaterial": "Concrete"
+    },
+    {
+      "id": 10,
+      "color": "pink",
+      "department": "Outdoors",
+      "productName": "Tasty Concrete Table",
+      "price": "370.00",
+      "productAdjective": "Awesome",
+      "productMaterial": "Rubber"
+    },
+    {
+      "id": 11,
+      "color": "turquoise",
+      "department": "Jewelery",
+      "productName": "Refined Fresh Table",
+      "price": "999.00",
+      "productAdjective": "Generic",
+      "productMaterial": "Wooden"
+    },
+    {
+      "id": 12,
+      "color": "indigo",
+      "department": "Home",
+      "productName": "Refined Cotton Sausages",
+      "price": "123.00",
+      "productAdjective": "Handcrafted",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 13,
+      "color": "white",
+      "department": "Clothing",
+      "productName": "Tasty Frozen Soap",
+      "price": "451.00",
+      "productAdjective": "Rustic",
+      "productMaterial": "Granite"
+    },
+    {
+      "id": 14,
+      "color": "mint green",
+      "department": "Outdoors",
+      "productName": "Handmade Soft Salad",
+      "price": "318.00",
+      "productAdjective": "Intelligent",
+      "productMaterial": "Metal"
+    },
+    {
+      "id": 15,
+      "color": "sky blue",
+      "department": "Industrial",
+      "productName": "Incredible Granite Gloves",
+      "price": "154.00",
+      "productAdjective": "Sleek",
+      "productMaterial": "Cotton"
+    },
+    {
+      "id": 16,
+      "color": "silver",
+      "department": "Clothing",
+      "productName": "Tasty Cotton Pizza",
+      "price": "881.00",
+      "productAdjective": "Incredible",
+      "productMaterial": "Soft"
+    },
+    {
+      "id": 17,
+      "color": "turquoise",
+      "department": "Shoes",
+      "productName": "Tasty Steel Towels",
+      "price": "955.00",
+      "productAdjective": "Unbranded",
+      "productMaterial": "Wooden"
+    },
+    {
+      "id": 18,
+      "color": "ivory",
+      "department": "Computers",
+      "productName": "Awesome Soft Hat",
+      "price": "964.00",
+      "productAdjective": "Generic",
+      "productMaterial": "Steel"
+    },
+    {
+      "id": 19,
+      "color": "fuchsia",
+      "department": "Movies",
+      "productName": "Awesome Metal Tuna",
+      "price": "197.00",
+      "productAdjective": "Fantastic",
+      "productMaterial": "Metal"
+    },
+    {
+      "id": 20,
+      "color": "sky blue",
+      "department": "Books",
+      "productName": "Refined Wooden Salad",
+      "price": "264.00",
+      "productAdjective": "Ergonomic",
+      "productMaterial": "Soft"
+    },
+    {
+      "id": 21,
+      "color": "green",
+      "department": "Sports",
+      "productName": "Gorgeous Granite Computer",
+      "price": "843.00",
+      "productAdjective": "Sleek",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 22,
+      "color": "yellow",
+      "department": "Games",
+      "productName": "Gorgeous Concrete Shoes",
+      "price": "238.00",
+      "productAdjective": "Sleek",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 23,
+      "color": "orchid",
+      "department": "Games",
+      "productName": "Unbranded Cotton Shirt",
+      "price": "926.00",
+      "productAdjective": "Ergonomic",
+      "productMaterial": "Frozen"
+    },
+    {
+      "id": 24,
+      "color": "violet",
+      "department": "Baby",
+      "productName": "Tasty Wooden Chicken",
+      "price": "1.00",
+      "productAdjective": "Refined",
+      "productMaterial": "Concrete"
+    },
+    {
+      "id": 25,
+      "color": "magenta",
+      "department": "Shoes",
+      "productName": "Sleek Plastic Salad",
+      "price": "747.00",
+      "productAdjective": "Tasty",
+      "productMaterial": "Concrete"
+    },
+    {
+      "id": 26,
+      "color": "turquoise",
+      "department": "Grocery",
+      "productName": "Handcrafted Plastic Bacon",
+      "price": "114.00",
+      "productAdjective": "Handmade",
+      "productMaterial": "Granite"
+    },
+    {
+      "id": 27,
+      "color": "black",
+      "department": "Books",
+      "productName": "Handmade Rubber Bike",
+      "price": "761.00",
+      "productAdjective": "Handcrafted",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 28,
+      "color": "lavender",
+      "department": "Tools",
+      "productName": "Sleek Concrete Fish",
+      "price": "715.00",
+      "productAdjective": "Incredible",
+      "productMaterial": "Wooden"
+    },
+    {
+      "id": 29,
+      "color": "lavender",
+      "department": "Tools",
+      "productName": "Intelligent Frozen Fish",
+      "price": "384.00",
+      "productAdjective": "Generic",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 30,
+      "color": "maroon",
+      "department": "Garden",
+      "productName": "Fantastic Fresh Chicken",
+      "price": "738.00",
+      "productAdjective": "Generic",
+      "productMaterial": "Granite"
+    },
+    {
+      "id": 31,
+      "color": "white",
+      "department": "Home",
+      "productName": "Small Metal Shoes",
+      "price": "999.00",
+      "productAdjective": "Ergonomic",
+      "productMaterial": "Wooden"
+    },
+    {
+      "id": 32,
+      "color": "orchid",
+      "department": "Sports",
+      "productName": "Unbranded Soft Fish",
+      "price": "12.00",
+      "productAdjective": "Practical",
+      "productMaterial": "Plastic"
+    },
+    {
+      "id": 33,
+      "color": "red",
+      "department": "Music",
+      "productName": "Sleek Cotton Chicken",
+      "price": "966.00",
+      "productAdjective": "Handcrafted",
+      "productMaterial": "Concrete"
+    },
+    {
+      "id": 34,
+      "color": "orange",
+      "department": "Shoes",
+      "productName": "Incredible Frozen Towels",
+      "price": "188.00",
+      "productAdjective": "Incredible",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 35,
+      "color": "turquoise",
+      "department": "Kids",
+      "productName": "Fantastic Wooden Mouse",
+      "price": "408.00",
+      "productAdjective": "Unbranded",
+      "productMaterial": "Granite"
+    },
+    {
+      "id": 36,
+      "color": "gold",
+      "department": "Movies",
+      "productName": "Rustic Steel Sausages",
+      "price": "103.00",
+      "productAdjective": "Licensed",
+      "productMaterial": "Granite"
+    },
+    {
+      "id": 37,
+      "color": "green",
+      "department": "Electronics",
+      "productName": "Fantastic Plastic Shirt",
+      "price": "155.00",
+      "productAdjective": "Incredible",
+      "productMaterial": "Rubber"
+    },
+    {
+      "id": 38,
+      "color": "plum",
+      "department": "Health",
+      "productName": "Licensed Steel Gloves",
+      "price": "446.00",
+      "productAdjective": "Refined",
+      "productMaterial": "Plastic"
+    },
+    {
+      "id": 39,
+      "color": "orchid",
+      "department": "Sports",
+      "productName": "Fantastic Fresh Pants",
+      "price": "124.00",
+      "productAdjective": "Incredible",
+      "productMaterial": "Plastic"
+    },
+    {
+      "id": 41,
+      "color": "maroon",
+      "department": "Tools",
+      "productName": "Intelligent Granite Computer",
+      "price": "599.00",
+      "productAdjective": "Unbranded",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 42,
+      "color": "blue",
+      "department": "Garden",
+      "productName": "Practical Rubber Computer",
+      "price": "478.00",
+      "productAdjective": "Small",
+      "productMaterial": "Fresh"
+    },
+    {
+      "id": 43,
+      "color": "mint green",
+      "department": "Health",
+      "productName": "Incredible Wooden Soap",
+      "price": "26.00",
+      "productAdjective": "Small",
+      "productMaterial": "Concrete"
+    },
+    {
+      "id": 44,
+      "color": "magenta",
+      "department": "Computers",
+      "productName": "Ergonomic Concrete Gloves",
+      "price": "600.00",
+      "productAdjective": "Ergonomic",
+      "productMaterial": "Plastic"
+    },
+    {
+      "id": 45,
+      "color": "azure",
+      "department": "Tools",
+      "productName": "Ergonomic Rubber Ball",
+      "price": "656.00",
+      "productAdjective": "Incredible",
+      "productMaterial": "Soft"
+    },
+    {
+      "id": 46,
+      "color": "tan",
+      "department": "Games",
+      "productName": "Intelligent Wooden Pizza",
+      "price": "567.00",
+      "productAdjective": "Licensed",
+      "productMaterial": "Rubber"
+    },
+    {
+      "id": 47,
+      "color": "teal",
+      "department": "Baby",
+      "productName": "Handmade Steel Fish",
+      "price": "374.00",
+      "productAdjective": "Small",
+      "productMaterial": "Granite"
+    },
+    {
+      "id": 48,
+      "color": "white",
+      "department": "Baby",
+      "productName": "Practical Metal Table",
+      "price": "990.00",
+      "productAdjective": "Generic",
+      "productMaterial": "Rubber"
+    },
+    {
+      "id": 49,
+      "color": "sky blue",
+      "department": "Sports",
+      "productName": "Small Plastic Keyboard",
+      "price": "605.00",
+      "productAdjective": "Handcrafted",
+      "productMaterial": "Rubber"
+    },
+    {
+      "id": 50,
+      "color": "orange",
+      "department": "Tools",
+      "productName": "Incredible Fresh Pizza",
+      "price": "787.00",
+      "productAdjective": "Awesome",
+      "productMaterial": "Plastic"
+    },
+    {
+      "id": 51,
+      "color": "red",
+      "department": "Toys",
+      "productName": "Handcrafted Rubber Fish",
+      "price": "778.00",
+      "productAdjective": "Incredible",
+      "productMaterial": "Steel"
+    },
+    {
+      "color": "#26c723",
+      "department": "Outdoors",
+      "productName": "Sleek Concrete Chicken",
+      "price": "661.00",
+      "productAdjective": "Unbranded",
+      "productMaterial": "Plastic",
+      "id": 52
+    }
+  ],
   "users": [
     {
       "id": 1,
@@ -637,6 +1098,17 @@
       "website": "conchita.com.es",
       "password": "hsYbvwZd",
       "id": 59
+    },
+    {
+      "firstName": "Gregorio",
+      "lastName": "Villareal",
+      "email": "Gregorio.Villareal@gmail.com",
+      "username": "Gregorio_Villareal",
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/thatonetommy/128.jpg",
+      "phone": "938-305-367",
+      "website": "maría.info",
+      "password": "7qypnqJO",
+      "id": 60
     }
   ]
 }
