@@ -6,6 +6,7 @@ import placeholderImage from './512x512.png';
 import ProductForm from '../ProductForm/ProductForm';
 import Pill from '../Pill/Pill';
 import './product-card.scss';
+import NumberFormat from '../NumberFormat/NumberFormat';
 
 const ProductCard = ({product, onRemove, onEdit}) => {
     const [modalIsOpen, setModalVisibility] = useState(false);
@@ -30,9 +31,9 @@ const ProductCard = ({product, onRemove, onEdit}) => {
         <article className="product-card">
             <figure className="product-card__figure">
                 <img className="product-card__avatar"
-                     src={product.avatar || placeholderImage}
+                     src={product.image || placeholderImage}
                      loading="lazy"
-                     alt={`${product.firstName} ${product.lastName}`}
+                     alt={`${product.productName}`}
                 />
                 <figcaption className="product-card__actions">
                     <div className="product-card__action"
@@ -50,7 +51,9 @@ const ProductCard = ({product, onRemove, onEdit}) => {
                     <div className="product-card__color" style={{backgroundColor: product.color}}/> {product.department}
                 </h2>
                 <h1 className="product-card__name">{product.productName}</h1>
-                <h1 className="product-card__price">{product.price}</h1>
+                <NumberFormat className="product-card__price"
+                              value={product.price}
+                />
                 <div className="product-card__meta">
                     <Pill text={product.productAdjective} />
                     <Pill text={product.productMaterial} />

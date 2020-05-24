@@ -9,4 +9,5 @@ test('It generates a random user', () => {
     expect(result).toHaveProperty('price');
     expect(result).toHaveProperty('productAdjective');
     expect(result).toHaveProperty('productMaterial');
+    expect(result).toHaveProperty('image');
 });

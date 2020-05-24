@@ -7,7 +7,7 @@ import generateRandomProduct from '../../modules/generate-random-product/generat
 import placeholderAvatar from './placeholder-user.png';
 import AlertMessage from '../AlertMessage/AlertMessage';
 import './product-form.scss';
-
+import faker from 'faker';
 const ProductForm = props => {
     const initialValues = {
         color: '',
@@ -75,6 +75,11 @@ const ProductForm = props => {
                 </div>
             </div>
             <div className="user-form__fields">
+                <button onClick={event => {
+                    event.preventDefault();
+                    const img = faker.image.technics();
+                    console.log(img);
+                }}>img</button>
                 <div className="user-form__fields-grid">
                     <FormField value={formData.productName}
                                id="productName"

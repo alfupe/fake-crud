@@ -9,7 +9,7 @@ const AppRoutes = () => {
     return (
         <Switch>
             <Route path="/login" component={props => (<LoginPage />)} />
-            <Route path="/" component={params => (<Redirect to="/users"/>)} />
+            <Route path="/" component={params => (<Redirect to="/products"/>)} />
             <PrivateRoute path="/users" component={UsersListPage} />
             <PrivateRoute path="/products" component={ProductsListPage} />
             <Route path="/:rest*">404, not found!</Route>

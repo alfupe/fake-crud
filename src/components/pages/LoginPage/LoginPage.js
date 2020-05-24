@@ -12,7 +12,7 @@ const LoginPage = props => {
     const login = formData => {
         services.auth.login(formData)
             .then(response => {
-                setLocation('/users')
+                setLocation('/products')
             });
     };
 

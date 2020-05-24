@@ -1,11 +1,12 @@
 const faker = require('faker');
 
-const generateRandomUser = (locale = 'es') => {
+const generateRandomUser = (counter = 0, locale = 'es') => {
     faker.locale = locale;
     const firstName = faker.name.firstName();
     const lastName = faker.name.lastName();
 
     return {
+        id: counter,
         firstName,
         lastName,
         email: faker.internet.email(firstName, lastName),
