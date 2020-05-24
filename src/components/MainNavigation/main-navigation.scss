@@ -23,7 +23,9 @@
         justify-content: flex-end;
 
         @media (max-width: 767px) {
-            display: none;
+            display: block;
+            opacity: 0;
+            visibility: hidden;
             position: absolute;
             top: 59px;
             left: 0;
@@ -33,9 +35,11 @@
             z-index: 1;
             padding-top: 10px;
             padding-bottom: 10px;
+            transition: all 0.15s ease;
 
             &--is-mobile-open {
-                display: block;
+                opacity: 1;
+                visibility: visible;
             }
         }
     }

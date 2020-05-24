@@ -1,0 +1,45 @@
+@import "src/assets/scss/variables";
+
+.search-control {
+    $sc: &;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+
+    &__input {
+        border: 1px $gray-200;
+        border-style: solid none solid solid;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        padding: 8px 16px;
+        color: $gray-600;
+        min-width: 280px;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    ::placeholder {
+        color: $gray-300;
+    }
+
+    &__clear {
+        position: absolute;
+        right: 65px;
+        top: 2px;
+        padding: 5px;
+        font-size: 18px;
+        opacity: 0.5;
+        transition: all 0.15s ease;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__trigger {
+        border-radius: 0 20px 20px 0;
+    }
+}
