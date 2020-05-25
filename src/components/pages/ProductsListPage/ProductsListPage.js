@@ -10,6 +10,7 @@ import PageHeader from '../../PageHeader/PageHeader';
 import Icon from '../../Icon/Icon';
 import SearchControl from '../../SearchControl/SearchControl';
 import ProductForm from '../../ProductForm/ProductForm';
+import AlertMessage from '../../AlertMessage/AlertMessage';
 
 const ProductsListPage = props => {
     const [modalIsOpen, setModalVisibility] = useState(false);
@@ -58,11 +59,12 @@ const ProductsListPage = props => {
                 </Portal.In>
             </PageHeader>
 
-            {products &&
-            <ProductsGrid products={products}
-                          onEdit={updateProduct}
-                          onRemove={findProducts}
-            />}
+            {products?.length
+                ? <ProductsGrid products={products}
+                                onEdit={updateProduct}
+                                onRemove={findProducts}
+                />
+                : <AlertMessage text="No hay resultados…" />}
 
             {modalIsOpen &&
             <Modal title="Crear nuevo producto"

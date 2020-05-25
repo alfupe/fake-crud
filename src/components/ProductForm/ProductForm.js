@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useRef, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import FormField from '../FormField/FormField';
 import Button from '../Button/Button';
 import Portal from '../Portal/Portal';
@@ -7,6 +7,7 @@ import generateRandomProduct from '../../modules/generate-random-product/generat
 import placeholderImage from './512x512.png';
 import AlertMessage from '../AlertMessage/AlertMessage';
 import namedColorConverter from '../../modules/named-color-converter/named-color-converter';
+import generateProductImage from '../../modules/generate-product-image/generate-product-image';
 import './product-form.scss';
 
 const ProductForm = props => {
@@ -20,14 +21,8 @@ const ProductForm = props => {
     };
     const [formData, setFormData] = useState(props.formData || initialValues);
     const [isValid, setIsValid] = useState(true);
-    const firstRender = useRef(true)
 
     useEffect(() => {
-        if (firstRender.current) {
-            firstRender.current = false;
-            return;
-        }
-
         validateForm(formData);
     }, [formData]);
 
@@ -51,25 +46,17 @@ const ProductForm = props => {
         setIsValid(isValid);
     };
 
-    const generateImage = () => {
-        const counter = Math.floor(Math.random() * 10) + 1;
-        const categoryIndex = Math.floor(Math.random() * 6);
-        const categories = ['abstract', 'animals', 'business', 'cats', 'food', 'fashion', 'technics'];
-
-        return generateRandomProduct(counter, categories[categoryIndex]).image;
-    };
-
     const autoGenerate = event => {
         const product = generateRandomProduct();
         setFormData({
             ...product,
             color: namedColorConverter(product.color),
-            image: generateImage()
+            image: generateProductImage()
         });
     };
 
     const regenerateImage = event => {
-        const image = generateImage();
+        const image = generateProductImage();
 
         setFormData({
             ...formData,
@@ -93,6 +80,7 @@ const ProductForm = props => {
                                id="productName"
                                name="productName"
                                label="Nombre"
+                               required
                                onChange={handleChange}
                     />
                     <FormField value={formData.price}
@@ -100,6 +88,7 @@ const ProductForm = props => {
                                name="price"
                                label="Precio"
                                type="number"
+                               required
                                onChange={handleChange}
                     />
                     <FormField value={formData.department}

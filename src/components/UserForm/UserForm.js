@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useRef, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import FormField from '../FormField/FormField';
 import Button from '../Button/Button';
 import Portal from '../Portal/Portal';
@@ -21,14 +21,8 @@ const UserForm = props => {
     };
     const [formData, setFormData] = useState(props.formData || initialValues);
     const [isValid, setIsValid] = useState(true);
-    const firstRender = useRef(true)
 
     useEffect(() => {
-        if (firstRender.current) {
-            firstRender.current = false;
-            return;
-        }
-
         validateForm(formData);
     }, [formData]);
 

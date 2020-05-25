@@ -10,6 +10,7 @@ import PageHeader from '../../PageHeader/PageHeader';
 import Icon from '../../Icon/Icon';
 import SearchControl from '../../SearchControl/SearchControl';
 import UserForm from '../../UserForm/UserForm';
+import AlertMessage from '../../AlertMessage/AlertMessage';
 
 const UsersListPage = props => {
     const [modalIsOpen, setModalVisibility] = useState(false);
@@ -58,11 +59,12 @@ const UsersListPage = props => {
                 </Portal.In>
             </PageHeader>
 
-            {users &&
-            <ProductsGrid users={users}
-                          onEdit={updateUser}
-                          onRemove={findUsers}
-            />}
+            {users?.length
+                ? <ProductsGrid users={users}
+                                onEdit={updateUser}
+                                onRemove={findUsers}
+                />
+                : <AlertMessage text="No hay resultados…" />}
 
             {modalIsOpen &&
             <Modal title="Crear nuevo usuario"

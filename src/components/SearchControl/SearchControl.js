@@ -32,6 +32,7 @@ const SearchControl = props => {
             </div>}
             <Button className="search-control__trigger"
                     text={<Icon icon="search" />}
+                    type="submit"
             />
         </form>
     );
