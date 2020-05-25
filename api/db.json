@@ -299,16 +299,6 @@
       "productMaterial": "Granite",
       "image": "http://lorempixel.com/output/abstract-q-c-512-512-9.jpg",
       "id": 31
-    },
-    {
-      "color": "#ff00ff",
-      "department": "Home",
-      "productName": "Awesome Metal Car",
-      "price": "283.00",
-      "productAdjective": "Fantastic",
-      "productMaterial": "Frozen",
-      "image": "http://lorempixel.com/output/animals-q-c-512-512-5.jpg",
-      "id": 32
     }
   ],
   "users": [
