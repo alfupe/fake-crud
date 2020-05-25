@@ -21,6 +21,64 @@
 
     &__fields {
         padding: $spacer / 2;
+
+        &--is-closed {
+            display: none;
+        }
+    }
+
+    &__fields-accordion {
+        &--is-closed {
+            display: none;
+        }
+    }
+
+    &__fields-header {
+        color: $gray-600;
+        padding-bottom: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &::after {
+            content: "\f107";
+            font-family: "FontAwesome", sans-serif;
+            transition: all 0.15s ease;
+        }
+
+        &--is-open {
+            &::after {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__oauth-provider {
+        text-align: center;
+        padding: 10px;
+        display: block;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        color: $gray-100;
+        cursor: pointer;
+        transition: all 0.15s ease;
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        &--google {
+            background-color: #4284f5;
+        }
+
+        &--facebook {
+            background-color: #3b5998;
+        }
+
+        &--instagram {
+            background-color: #e53f5e;
+        }
     }
 
     &__footer {
